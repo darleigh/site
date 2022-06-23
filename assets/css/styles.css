@@ -299,10 +299,6 @@ img {
   border-radius: .5rem;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
 }
-.skills__data:hover {
-  position: relative;
-  color: var(--first-color);
-}
 
 .skills__icon {
   font-size: 2rem;
@@ -313,6 +309,10 @@ img {
 .skills__names {
   display: flex;
   align-items: center;
+}
+.skills__names:hover {
+  position: relative;
+  color: var(--first-color);
 }
 
 .skills__bar {
