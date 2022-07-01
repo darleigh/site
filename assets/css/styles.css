@@ -240,6 +240,7 @@ img {
 
 /*BUTTONS*/
 .button {
+  border:1.5px solid #ffff;
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
@@ -251,7 +252,7 @@ img {
 }
 
 .button:hover {
-  border:1px solid var(--first-color);
+  border:1.5px solid var(--first-color);
   background-color:#ffff;
   box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
   color:var(--first-color);
@@ -291,6 +292,7 @@ img {
 }
 
 .skills__data {
+  border:1.5px solid #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -303,7 +305,7 @@ img {
 }
 .skills__data:hover{
   /* border:var(--first-color) */
-  border:1.5px inset var(--first-color);
+  border:1.5px solid var(--first-color);
   background-color:#ffff;
   /* box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15); */
   color:var(--first-color);
