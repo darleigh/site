@@ -13,7 +13,7 @@
   
   --hue-color: hsl(231, 59%, 31%);
   --first-color: var(--hue-color);
-  --second-color: var(--hue-color);
+  --second-color: hsl(var(--hue-color), 59%, 31%);
   /*===== Fuente y tipografia =====*/
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
