@@ -7,8 +7,8 @@
   /*===== Colores =====*/
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
-  --hue-color: hsl(231, 59%, 31%);
-  --first-color: var(--hue-color); 
+  --hue-color: 224;
+  --first-color: hsl(var(--hue-color), 89%, 60%); 
   --second-color: #000000;
   /*===== Fuente y tipografia =====*/
   --body-font: 'Poppins', sans-serif;
