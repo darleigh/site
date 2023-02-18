@@ -51,7 +51,7 @@
   --color-secondary: #f4f5f6;
   --color-tertiary: #0d1013;
   --color-gray: #f6f6f6;
-  --color-subtitle: #c9c9c9;
+  --color-subtitle: #8A8A8E;
   --background-color-1: linear-gradient(145deg, #1e2024, #23272b);
   --background-color-2: #212428;
   --shadow-1: 10px 10px 19px #1c1e22,
@@ -63,7 +63,7 @@
   --gradient-box-w: linear-gradient(145deg, #f6f6f6, #ffffff);
   --gradient-red-hover:
     radial-gradient(ellipse at left 30%,#007AFF 100%, transparent);
-  --color-heading: #ffffff;
+  --color-heading: #8A8A8E;
   --color-heading-wv: #1e2125;
   --color-body: #878e99;
   --color-body-white: #3c3e41;
@@ -7888,7 +7888,7 @@ body.template-color-1 {
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
+  color: #000000;
   background-color: transparent;
   position: relative; }
 
