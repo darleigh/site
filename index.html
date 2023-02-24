@@ -55,20 +55,21 @@
     <style>
 /* Process bar */
 #progress-container {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  /* position: fixed; */
+  /* bottom: 0; */
+  /* left: 0; */
   width: 100%;
-  height: 5px;
+  height: 4px;
   background-color: white;
-  z-index: 10;
+  z-index: 0;
+  border-radius: 10px;
   }
 
   #progress-bar {
   height: 100%;
   background-color: var(--color-primary);
   width: 0%;
-  transition: width 0.3s ease;
+  transition: width 0.4s ease;
   border-radius: 10px;
   }
     </style>
@@ -103,8 +104,10 @@
                             <li class="nav-item"><a class="nav-link smoth-animation" href="#Publication">Publication</a></li>
                             <!-- <li class="nav-item"><a class="nav-link smoth-animation" href="#Diary">Diary</a></li> -->
                         </ul>
+
                         <!-- End Mainmanu Nav -->
                     </nav>
+                
                     <!-- Start Header Right  -->
                     <div class="header-right">
                         <div class="hamberger-menu d-block d-xl-none">
@@ -117,8 +120,10 @@
                         </div>
                     </div>
                     <!-- End Header Right  -->
-
                 </div>
+            </div>
+            <div id="progress-container">
+                <div id="progress-bar"></div>
             </div>
             <!-- End Header Center -->
         </div>
@@ -150,6 +155,9 @@
                 </ul>
                 <!-- end -->
             </div>
+        </div>
+        <div id="progress-container">
+            <div id="progress-bar"></div>
         </div>
     </div>
     <!-- End Popup Mobile Menu  -->
@@ -823,9 +831,9 @@
                 </div>
             </div>
         </div>
-        <div id="progress-container">
+        <!-- <div id="progress-container">
             <div id="progress-bar"></div>
-        </div>
+        </div> -->
     </div>
     <!-- End Footer Area -->
     <!-- JS ============================================ -->
