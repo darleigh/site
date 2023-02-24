@@ -1,4 +1,4 @@
 theme: jekyll-theme-minimal
-
+source: http://darleigh.github.io/site
 include:
   - _include
