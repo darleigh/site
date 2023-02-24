@@ -52,6 +52,23 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+    #progress-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--color-second);
+    }
+
+    #progress-bar {
+    height: 100%;
+    background-color: var(--color-primary);
+    width: 0%;
+    transition: width 0.3s ease;
+    }
+	</style>
 </head>
 
 <body class="template-color-1 spybody white-version" data-spy="scroll" data-target=".navbar-example2" data-offset="150">
@@ -95,12 +112,12 @@
                         </span>
                         </div>
                     </div>
-                    <!-- End Header Right  -->
-
-                </div>
+                    <!-- End Header Right  -->        
+                </div>      
             </div>
             <!-- End Header Center -->
         </div>
+          
     </header>
     <!-- End Header Area -->
     <!-- Start Popup Mobile Menu  -->
@@ -151,7 +168,8 @@
                             <div class="position-sticky clients-wrapper sticky-top rbt-sticky-top-adjust">
                                 <div class="contact-about-area">
                                         <div class="content">
-                                            <a class="nav-link smoth-animation active" href="#home">Introduce</a>
+                                            <a class="nav-link smoth-animation" href="#home">Introduce</a>
+                                            <a class="nav-link smoth-animation" href="#sec2">Sec2</a>
                                             <!-- end -->
                                         </div>
                                         <!-- End Header Right  -->
@@ -171,7 +189,29 @@
                             <div class="description">
                                 <p>I am available for freelance work. Connect with me via and call in to my account.
                                 </p>
-                                <span class="phone">Phone: <a href="tel:01941043264">+01234567890</a></span>
+                                <span class="phone" id="sec2">Phone: <a href="tel:01941043264">+01234567890</a></span>
+                                <span class="mail">Email: <a href="mailto:admin@example.com">admin@example.com</a></span>
+                                <span class="phone"><a href="tel:01941043264">+01234567890</a></span>
+                            </div>
+                            <div class="social-area">
+                                <div class="name">FIND WITH ME</div>
+                                <div class="social-icone">
+                                    <a href="#"><i data-feather="facebook"></i></a>
+                                    <a href="#"><i data-feather="linkedin"></i></a>
+                                    <a href="#"><i data-feather="instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="thumbnail">
+                                <img src="assets/images/3d/Saly-31.png" alt="contact-img">
+                            </div>
+                            <div class="title-area">
+                                <h4 class="title">Nevine Acotanza</h4>
+                                <span>Chief Operating Officer</span>
+                            </div>
+                            <div class="description">
+                                <p>I am available for freelance work. Connect with me via and call in to my account.
+                                </p>
+                                <span class="phone" >Phone: <a href="tel:01941043264">+01234567890</a></span>
                                 <span class="mail">Email: <a href="mailto:admin@example.com">admin@example.com</a></span>
                                 <span class="phone"><a href="tel:01941043264">+01234567890</a></span>
                             </div>
@@ -185,6 +225,7 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -218,7 +259,11 @@
                 </div>
             </div>
         </div>
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
     </div>
+    
     <!-- End Footer Area -->
     <!-- JS ============================================ -->
     <script src="assets/js/vendor/jquery.js"></script>
@@ -233,6 +278,15 @@
     <!-- main JS -->
     <script src="assets/js/main.js"></script>
     <script src="nav_assets/js/main.js"></script>
+    <script>
+    const progressBar = document.getElementById("progress-bar");
+      const totalPageHeight = document.body.scrollHeight - window.innerHeight;
+
+      window.onscroll = function () {
+        const progressHeight = (window.pageYOffset / totalPageHeight) * 100;
+        progressBar.style.width = progressHeight + "%";
+    };
+    </script>
 </body>
 
 </html>

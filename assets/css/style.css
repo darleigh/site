@@ -125,7 +125,7 @@
 
 
 
-
+/* Scrollbar */
 
   ::-webkit-scrollbar {
     width: 8px;
@@ -134,21 +134,16 @@
   ::-webkit-scrollbar-track {
     background:none !important;
   }
+  /* var(--color-primary) */
   ::-webkit-scrollbar-thumb {
-    background:#007AFF;
-    ;
+    background:var(--color-primary);
     border-radius: 10px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background:#007AFF
+    background:var(--color-primary);
   }
   
-
-
-
-
-
 * {
   box-sizing: border-box; }
 

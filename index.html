@@ -52,6 +52,26 @@
     <link rel="stylesheet" href="assets/css/plugins/feature.css">
     <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+/* Process bar */
+#progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  z-index: 10;
+  }
+
+  #progress-bar {
+  height: 100%;
+  background-color: var(--color-primary);
+  width: 0%;
+  transition: width 0.3s ease;
+  border-radius: 10px;
+  }
+    </style>
 </head>
 
 <body class="template-color-1 spybody white-version" data-spy="scroll" data-target=".navbar-example2" data-offset="150">
@@ -803,6 +823,9 @@
                 </div>
             </div>
         </div>
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
     </div>
     <!-- End Footer Area -->
     <!-- JS ============================================ -->
@@ -817,6 +840,15 @@
     <script src="assets/js/vendor/particles.js"></script>
     <!-- main JS -->
     <script src="assets/js/main.js"></script>
+    <script>
+        const progressBar = document.getElementById("progress-bar");
+          const totalPageHeight = document.body.scrollHeight - window.innerHeight;
+    
+          window.onscroll = function () {
+            const progressHeight = (window.pageYOffset / totalPageHeight) * 100;
+            progressBar.style.width = progressHeight + "%";
+        };
+        </script>
 </body>
 
 </html>
