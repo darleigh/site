@@ -1,0 +1,36 @@
+<div class="sticky-top sticky-top-offset">
+    <h4 class="font-weight-bold spanborder"><span>Related topics</span></h4>  
+    <ol class="list-featured">        
+        {% assign current_tags = page.tags %}
+        {% assign related_posts = site.posts | where_exp:"post", "post != page" | where_exp:"post", "post.tags.size > 0" %}
+        {% assign related_posts_by_tag = related_posts | group_by:"tags" %}
+        {% for related_post_group in related_posts_by_tag %}
+            {% assign related_post = related_post_group.items.first %}
+            {% assign related_post_tags = related_post.tags %}
+            {% if related_post_tags.size > 0 %}
+                {% for tag in related_post_tags %}
+                    {% if current_tags contains tag %}
+                        <li class="mb-4">
+                            <span>
+                                <h6>
+                                    <a href="{{site.baseurl}}{{ related_post.url }}" class="postTitle">{{ related_post.title }}</a>
+                                </6>
+                                <p style="color:black; font-weight: normal;line-height: 1.5;padding-top:0.25em">
+                                    {{ related_post.excerpt | strip_html | strip_newlines | truncate: 150 }}
+                                </p>
+                                <!-- <span class="d-block text-muted">
+                                    In <span class="catlist">
+                                        {% for category in related_post.categories %}
+                                            <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
+                                        {% endfor %}
+                                    </span>
+                                </span> -->
+                            </span>
+                        </li>
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
+    </ol>
+</div>

@@ -1,0 +1,28 @@
+<!-- Add this code to your HTML file -->
+<div class="scrollable-list">
+  <ul id="heading-list"></ul>
+</div>
+
+<!-- Add this script to the bottom of your HTML file -->
+<script>
+  // Wait for the document to load
+  document.addEventListener("DOMContentLoaded", function() {
+    // Get all the H1 elements on the page
+    const headings = document.getElementsByTagName("h1");
+
+    // Loop through each H1 element and create a list item with a link
+    for (let i = 0; i < headings.length; i++) {
+      const heading = headings[i];
+      const headingText = heading.textContent;
+      const headingId = headingText.toLowerCase().replace(" ", "-");
+      const listItem = document.createElement("li");
+      const link = document.createElement("a");
+
+      link.href = "#" + headingId;
+      link.id = headingId;
+      link.textContent = headingText;
+      listItem.appendChild(link);
+      document.getElementById("heading-list").appendChild(listItem);
+    }
+  });
+</script>
