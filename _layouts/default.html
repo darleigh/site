@@ -76,57 +76,11 @@
 </head>
     <main>
 <body class="template-color-1 spybody white-version" data-spy="scroll" data-target=".navbar-example2" data-offset="150">
-
-    {{content}}
-
-    </main>
-<!-- {% include footer.html %} -->
-    <!-- Start Footer Area -->
-    <div class="rn-footer-area rn-section-gap section-separator">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer-area text-center">
-                        <div class="logo">
-                            <a href="#">
-                                <img href="#" style="width: 80px;" src="darleigh-logo_tran-2401-2236.png">
-                                <p href="#" style="font-weight:bold; font-size:20px; color:black; padding-bottom: -50px">Duong Nguyen</p>
-                                <p style="font-size:12px;font-weight: bold;"> <a href="https://blog.darleigh.com/">Darleigh.eBlog</a> • <a href="https://honghanh.org/">Darleigh.eStore</a></p>
-                                <p style="font-size:12px;"> Darleigh • All rights reserved.
-                                    <!-- Lasted update on Feb 05, 2023. -->
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- <div id="progress-container">
-            <div id="progress-bar"></div>
-        </div> -->
-    </div>
-    <!-- End Footer Area -->
-    <!-- JS ============================================ -->
-    <script src="https://darleigh.com/assets/js/vendor/jquery.js"></script>
-    <script src="https://darleigh.com/assets/js/vendor/modernizer.min.js"></script>
-    <script src="https://darleigh.com/assets/js/vendor/feather.min.js"></script>
-    <script src="https://darleigh.com/assets/js/vendor/slick.min.js"></script>
-    <script src="https://darleigh.com/assets/js/vendor/bootstrap.js"></script>
-    <script src="https://darleigh.com/assets/js/vendor/text-type.js"></script>
-    <script src="https://darleigh.com/assets/js/vendor/wow.js"></script>
-    <script src="https://darleigh.com/assets/js/vendor/aos.js"></script>
-    <script src="https://darleigh.com/assets/js/vendor/particles.js"></script>
-    <!-- main JS -->
-    <script src="https://darleigh.com/assets/js/main.js"></script>
-    <script>
-        const progressBar = document.getElementById("progress-bar");
-          const totalPageHeight = document.body.scrollHeight - window.innerHeight;
+    {% include footer.html %}
     
-          window.onscroll = function () {
-            const progressHeight = (window.pageYOffset / totalPageHeight) * 100;
-            progressBar.style.width = progressHeight + "%";
-        };
-        </script>
+    {{content}}
+    </main>
+    {% include footer.html %}
 </body>
 
 </html>
