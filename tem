@@ -1,0 +1,51 @@
+
+<!-- Start Testimonia Area  -->
+    <div class="rn-testimonial-area rn-section-gap section-separator" id="Milestone">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="section-title text-center">
+                        <span class="subtitle">About my itinerary                            </span>
+                        <h2 class="title">Milestone</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">
+                <div class="col-lg-12">
+                    <div class="testimonial-activation testimonial-pb mb--30">
+                        <!-- Start Single testiminail -->
+                        <div class="testimonial mt--50 mt_md--40 mt_sm--40">
+                            <div class="inner">
+                                <div class="card-info">
+                                    <div class="card-thumbnail">
+                                        <img src="https://darleigh.com/assets/images/3d/Saly-32.png">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="subtitle mt--10">BACHELOR</span>
+                                        <h3 class="title">Ton Duc Thang University</h3>
+                                        <span class="designation">Information Technology</span>
+                                    </div>
+                                </div>
+                                <div class="card-description">
+                                    <div class="title-area">
+                                        <div class="title-info">
+                                            <h3 class="title" style="font-weight:bold">Software Engineering</h3>
+                                            <span class="date">Aug 17, 2017 - Aug 15, 2023</span>
+                                        </div>
+                                        <div class="rating" style="color:black; font-weight:600; font-size:16px">
+                                            7.2/10
+                                        </div>
+                                    </div>
+                                    <div class="seperator"></div>
+                                    <p class="discription">
+                                        Capable of analyzing systems, recognizing problems, and providing solutions. Bringing a track record of doing preventative maintenance to maintain the safe and seamless operation of electrical systems, as well as working on detected concerns. Has a thorough awareness of electrical codes and best practices, as well as a dedication to cooperation and excellence. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Testimonia Area  -->
